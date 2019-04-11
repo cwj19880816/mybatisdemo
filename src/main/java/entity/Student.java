@@ -7,6 +7,7 @@ public class Student {
     private String student_phone;
     private String student_email;
     private User user;
+    private Clas clas;
 
     public int getStudent_id() {
         return student_id;
@@ -56,23 +57,33 @@ public class Student {
         this.user = user;
     }
 
+    public Clas getClas() {
+        return clas;
+    }
+
+    public void setClas(Clas clas) {
+        this.clas = clas;
+    }
+
     public Student() {
     }
 
-    public Student(int student_id, String student_name, String student_sex, String student_phone, String student_email, User user) {
+    public Student(int student_id, String student_name, String student_sex, String student_phone, String student_email, User user, Clas clas) {
         this.student_id = student_id;
         this.student_name = student_name;
         this.student_sex = student_sex;
         this.student_phone = student_phone;
         this.student_email = student_email;
         this.user = user;
+        this.clas = clas;
     }
 
-    public Student(String student_name, String student_sex, String student_phone, String student_email, User user) {
+    public Student(String student_name, String student_sex, String student_phone, String student_email, User user, Clas clas) {
         this.student_name = student_name;
         this.student_sex = student_sex;
         this.student_phone = student_phone;
         this.student_email = student_email;
         this.user = user;
+        this.clas = clas;
     }
 }

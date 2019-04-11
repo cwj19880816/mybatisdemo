@@ -6,6 +6,7 @@ public class Clas {
     private int clas_id;
     private String clas_name;
     private Collection<Teacher> teachers;
+    private Collection<Student> students;
 
     public int getClas_id() {
         return clas_id;
@@ -31,17 +32,27 @@ public class Clas {
         this.teachers = teachers;
     }
 
+    public Collection<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(Collection<Student> students) {
+        this.students = students;
+    }
+
     public Clas() {
     }
 
-    public Clas(int clas_id, String clas_name, Collection<Teacher> teachers) {
+    public Clas(int clas_id, String clas_name, Collection<Teacher> teachers, Collection<Student> students) {
         this.clas_id = clas_id;
         this.clas_name = clas_name;
         this.teachers = teachers;
+        this.students = students;
     }
 
-    public Clas(String clas_name, Collection<Teacher> teachers) {
+    public Clas(String clas_name, Collection<Teacher> teachers, Collection<Student> students) {
         this.clas_name = clas_name;
         this.teachers = teachers;
+        this.students = students;
     }
 }

@@ -12,7 +12,7 @@
 <body>
 <%=name %>，登录成功！<br/>
 <c:forEach var="clas" items="${sessionScope.clases}">
-    ${clas.clas_name}<br/>
+    <a href="getStudentsByClasServlet?clas_id=${clas.clas_id}">${clas.clas_name}</a><br/>
 </c:forEach>
 </body>
 </html>
